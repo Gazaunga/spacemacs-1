@@ -51,7 +51,7 @@
     ;;    '("exwm-term"
     ;;      "Termite" #'exwm-launch-term))
     ;;   (shell-pop index))
-    :config
+    ;;:config
     ;;(when dotspacemacs-use-ido
      ;; (exwm-enable-ido-workaround))
    ;; (defun spacemacs/exwm-bind-command (key command &rest bindings)
