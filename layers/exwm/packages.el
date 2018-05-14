@@ -52,19 +52,19 @@
     ;;      "Termite" #'exwm-launch-term))
     ;;   (shell-pop index))
     :config
-    (when dotspacemacs-use-ido
-      (exwm-enable-ido-workaround))
-    (defun spacemacs/exwm-bind-command (key command &rest bindings)
-      (while key
-        (exwm-input-set-key (kbd key)
-                            `(lambda ()
-                               (interactive)
-                               (start-process-shell-command ,command nil ,command)))
-        (setq key     (pop bindings)
-              command (pop bindings))))
+    ;;(when dotspacemacs-use-ido
+     ;; (exwm-enable-ido-workaround))
+   ;; (defun spacemacs/exwm-bind-command (key command &rest bindings)
+     ;; (while key
+       ;; (exwm-input-set-key (kbd key)
+         ;;                   `(lambda ()
+           ;;                    (interactive)
+            ;;                   (start-process-shell-command ,command nil ,command)))
+        ;;(setq key     (pop bindings)
+          ;;    command (pop bindings))))
 
-    (spacemacs/exwm-bind-command
-     "<s-return>"  exwm--terminal-command)
+;;    (spacemacs/exwm-bind-command
+  ;;   "<s-return>"  exwm--terminal-command)
 
     ;; All buffers created in EXWM mode are named "*EXWM*". You may want to change
     ;; it in `exwm-update-class-hook' and `exwm-update-title-hook', which are run
