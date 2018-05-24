@@ -13,7 +13,8 @@ xsetroot -cursor_name left_ptr
 # Keyboard repeat rate
 xset r rate 200 60
 
-xmodmap .xmodmap
+xmodmap -e 'clear Lock' #ensures you're not stuck in CAPS on mode
+xmodmap -e 'keycode 0x42=Escape' #remaps the keyboard so CAPS LOCK=ESC
 
 # Start Emacs
 #exec dbus-launch --exit-with-session emacs --eval "(exwm-enable)"
