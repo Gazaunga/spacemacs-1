@@ -13,6 +13,8 @@ xsetroot -cursor_name left_ptr
 # Keyboard repeat rate
 xset r rate 200 60
 
+xmodmap .xmodmap
+
 # Start Emacs
 #exec dbus-launch --exit-with-session emacs --eval "(exwm-enable)"
 exec emacs -fs --eval "(exwm-enable)"
