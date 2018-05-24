@@ -16,6 +16,12 @@ xset r rate 200 60
 xmodmap -e 'clear Lock' #ensures you're not stuck in CAPS on mode
 xmodmap -e 'keycode 0x42=Escape' #remaps the keyboard so CAPS LOCK=ESC
 
+export VISUAL=emacsclient
+export EDITOR="$VISUAL"
+export TERM="xterm"
+export DISPLAY=:0
+
 # Start Emacs
 #exec dbus-launch --exit-with-session emacs --eval "(exwm-enable)"
+#exec dbus-launch --exit-with-session emacs -fs --eval "(exwm-enable)"
 exec emacs -fs --eval "(exwm-enable)"
