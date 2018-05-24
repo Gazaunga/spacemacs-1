@@ -21,6 +21,14 @@ export EDITOR="$VISUAL"
 export TERM="xterm"
 export DISPLAY=:0
 
+xfce4-power-manager &
+xscreensaver -no-splash &
+nm-applet &                     # Network Manager
+pulseaudio --kill               # Kill pulseaudio
+pulseaudio --start              # Start pulseaudio
+volti &                         # Volume manager
+udiskie --tray &                # Disk mount utility
+
 # Start Emacs
 #exec dbus-launch --exit-with-session emacs --eval "(exwm-enable)"
 #exec dbus-launch --exit-with-session emacs -fs --eval "(exwm-enable)"
