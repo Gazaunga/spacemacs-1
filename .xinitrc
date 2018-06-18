@@ -27,7 +27,7 @@ nm-applet &                     # Network Manager
 pulseaudio --kill               # Kill pulseaudio
 pulseaudio --start              # Start pulseaudio
 volti &                         # Volume manager
-udiskie --tray &                # Disk mount utility
+udiskie --no-notify --tray &    # Disk mount utility
 
 # Start Emacs
 #exec dbus-launch --exit-with-session emacs --eval "(exwm-enable)"
