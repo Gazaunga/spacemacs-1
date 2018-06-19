@@ -6,6 +6,7 @@ set -ex
 mv .xinitrc ~/.xinitrc
 mv .spacemacs ~/.spacemacs
 mv .bash_profile ~/.bash_profile
+mv .latexmkrc ~/.latexmkrc
 
 
 # remove script/self
