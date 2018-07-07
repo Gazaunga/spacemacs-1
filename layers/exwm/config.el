@@ -1,7 +1,7 @@
 (defvar exwm--terminal-command "xterm"
   "Terminal command to run.")
 
-(defvar exwm--locking-command "lock"
+(defvar exwm--locking-command "i3lock"
   "Command to run when locking session")
 
 (defvar exwm-app-launcher--prompt "$ "
